@@ -1,0 +1,173 @@
+@font-face {
+  font-family: 'Georgia';
+  src: local('Georgia Regular'), local('Georgia-Regular'),
+      url('../fonts/Georgia.woff2') format('woff2'),
+      url('../fonts/Georgia.woff') format('woff'),
+      url('../fonts/Georgia.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Arial';
+  src: local('Arial Regular'), local('Arial-Regular'),
+      url('ArialMT.woff2') format('woff2'),
+      url('ArialMT.woff') format('woff'),
+      url('ArialMT.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+body, html {
+  overflow-x: hidden
+}
+a {
+  text-decoration: none;
+}
+header {
+  background-image: url(../img/main/header-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  padding-bottom: 270px;
+}
+.wrap {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+#checkBox, .toggle {
+  display: none;
+}
+header .wrap .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .wrap .logoLeftPart {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+header .wrap .logoLeftPart .yellowPartLogo {
+  font-family: 'Georgia';
+  font-size: 32px;
+  font-weight: 400;
+  color: #f1cdb3;
+  letter-spacing: 1.2px;
+  line-height: 40px;
+}
+header .wrap .logoLeftPart .whitePartLogo {
+  font-family: 'Arial';
+  font-size: 13px;
+  font-weight: 400;
+  color: #fff;
+  letter-spacing: 1.5px;
+}
+header .wrap .logoRigthPart .menu {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+}
+header .wrap .logoRigthPart .menu li {
+  margin-right: 40px;
+}
+header .wrap .logoRigthPart .menu li a {
+  font-family: 'Arial';
+  font-size: 15px;
+  font-weight: 400;
+  color: #cdcdcd;
+  letter-spacing: 0.5px;
+  transition: border-bottom .2s linear;
+}
+header .wrap .logoRigthPart .menu li a:hover {
+  border-bottom: 3px solid #f1cdb3;
+  border-bottom-style: ridge;
+}
+header .wrap .main {
+  max-width: 470px;
+  margin-top: 250px;
+}
+header .wrap .main h1 {
+  font-family: 'Georgia';
+  font-size: 44px;
+  font-weight: 400;
+  color: #fff;
+  max-width: 370px;
+  margin-bottom: 35px;
+}
+header .wrap .main p {
+  font-family: 'Arial';
+  font-size: 15px;
+  font-weight: 400;
+  color: #cdcdcd;
+  margin-bottom: 35px;
+}
+header .wrap .main a {
+  font-family: 'Georgia';
+  font-size: 17px;
+  font-weight: 400;
+  color: #000;
+  background-color: #f1cdb3;
+  padding: 15px 40px;
+  border-radius: 30px;
+  transition: all .2s linear;
+}
+header .wrap .main a:hover {
+  background-color: #fddcc4;
+}
+
+@media screen and (max-width: 765px) {
+  header .wrap .header {
+    justify-content: space-around;
+  }
+  .toggle {
+    clear: both;
+    display: block;
+    text-align: right;
+    font-size: 14px;
+    line-height: 40px;
+    width: 100%;
+    color: #cdcdcd;
+    transition: all .1s linear;
+  }
+  #checkBox:checked + label .touch li {
+    opacity: 1;
+    visibility: visible;
+    transition: all .2s linear;
+  }
+  #checkBox:checked + label .touch {
+    height: 170px;
+  }
+  .menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    height: 0;
+    padding: 0;
+    margin: 0;
+    transition: height .5s linear;
+  }
+  .menu li {
+    display: flex;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+  }
+  header {
+    background-image: url(../img/main/header-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left top;
+  }
+  .wrap {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+  header .wrap .main {
+    margin-top: 100px;
+  }
+}
