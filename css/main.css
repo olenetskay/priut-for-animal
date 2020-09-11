@@ -291,6 +291,117 @@ span.ant-dot {
   border-radius: 5px;
   cursor: pointer;
 }
+
+.help {
+  background-color: #fafafa;
+  padding: 75px 0 65px;
+}
+.help .wrap h2 {
+  font-family: 'Georgia';
+  font-size: 35px;
+  font-weight: 400;
+  color: #545454;
+  text-align: center;
+  line-height: 40px;
+  margin-bottom: 35px;
+}
+.help .wrap .helpFlex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.help .wrap .helpFlex .flexItem {
+  font-family: 'Georgia';
+  font-size: 20px;
+  font-weight: 400;
+  color: #545454;
+  line-height: 24px;
+  text-align: center;
+  margin: 0 50px 30px;
+}
+.donat {
+  background-color: #f6f6f6;
+  padding: 65px 0 80px;
+}
+.donat .wrap {
+  display: flex;
+  justify-content: flex-start;
+}
+.donat .wrap img {
+  margin-right: 60px;
+}
+.donat .wrap .donatBox {
+  max-width: 390px;
+}
+.donat .wrap .donatBox h2 {
+  font-family: 'Georgia';
+  font-size: 35px;
+  font-weight: 400;
+  color: #545454;
+  line-height: 40px;
+  margin-bottom: 35px;
+}
+.donat .wrap .donatBox p span{
+  font-family: 'Georgia';
+  font-size: 15px;
+  font-weight: 400;
+  color: #545454;
+  font-style: normal;
+}
+.donat .wrap .donatBox .credit {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 320px;
+  background-color: #f1cdb3;
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+.donat .wrap .donatBox>p {
+  font-family: 'Arial';
+  font-size: 12px;
+  font-weight: 400;
+  font-style: italic;
+  color: #b2b2b2;
+}
+footer {
+  background-image: url(../img/main/footer-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 50px;
+}
+footer .wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+footer h2 {
+  font-family: 'Georgia';
+  font-size: 35px;
+  font-weight: 400;
+  color: #fff;
+  line-height: 45px;
+  margin-bottom: 30px;
+}
+footer p {
+  font-family: 'Times New Roman', serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: #f1cdb3;
+}
+footer .wrap .contact {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 30px;
+}
+footer .wrap .contact img {
+  margin-right: 10px;
+}
+
 @media screen and (max-width: 765px) {
   header .wrap .header {
     justify-content: space-around;
